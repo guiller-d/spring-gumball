@@ -32,14 +32,14 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      
-    #Build JAR Fike
+
+    # Build JAR File
     - name: Set up JDK 11
       uses: actions/setup-java@v2
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Grant execute persmission for gradlew
+    - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
@@ -89,5 +89,5 @@ jobs:
       run: |-
         ./kustomize edit set image gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
         ./kustomize build . | kubectl apply -f -
-        kubectl rollout status deployment/$DEPLOYMENT_NAME
-        kubectl get services -o wide
+        #kubectl rollout status deployment/$DEPLOYMENT_NAME
+        #kubectl get services -o wide
