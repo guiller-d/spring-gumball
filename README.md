@@ -6,15 +6,15 @@
 
 ![alt text](https://github.com/guiller-d/spring-gumball/blob/master/screenshots/image1.png)
 
-**Create Java CI with Gradle yml file (gradle.yml)
+**Create Java CI with Gradle yml file (gradle.yml)**
 
 ![alt text](https://github.com/guiller-d/spring-gumball/blob/master/screenshots/image2.png)
 
-**Create Build and Deploy to GKE yml file (google.yml)
+**Create Build and Deploy to GKE yml file (google.yml)**
 
 ![alt text](https://github.com/guiller-d/spring-gumball/blob/master/screenshots/image3.png)
 
-**Check if building gradle.yml is successful. 
+**Check if building gradle.yml is successful.**
 
 ![alt text](https://github.com/guiller-d/spring-gumball/blob/master/screenshots/image2.2.png)
 
